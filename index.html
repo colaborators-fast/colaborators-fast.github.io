@@ -38,18 +38,26 @@
   <header id="header">
 
 
-      <div id="logo" class="container pull-left">
+      <!-- <div id="logo" class="container pull-left">
 
-        <h1 style="padding-right: 25px"><a href="#intro" class="scrollto"> <img src="images/logo.png" alt="Nymun" height="50" width="50" style="margin-left: -55px; display: inline-block">Nymun</a></h1>
-      </div>
+        <h1 style="padding-right: 25px"><a href="#intro" class="scrollto"> <img class="pull-left navbar-brand pr-1" src="images/logo.png" alt="Nymun" height="50" width="50" >Nymun</a></h1>
+      </div> -->
 
+
+      <a class="pull-left navbar-brand pl-3" href="#">
+        <img src="images/logo.png" alt="Nymun" style="width:40px;">
+      </a>
+      <a class="pull-left pb-5 scrollto" href="#">
+        <h1>nymun</h1>
+      </a>
       <nav id="nav-menu-container">
-        <ul class="nav-menu">
+          <ul class=" nav-menu">
+          <!-- <img class="logo" src="images/logo.png" height="50" width="50" alt="logo"> -->
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
 
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#team">Team</a></li>
+          <li><a href="#team">Directors</a></li>
 
             <li><a href="#services">Events</a></li>
 
@@ -350,27 +358,16 @@
  <section id="team">
    <div class="container">
      <div class="section-header wow fadeInUp">
-       <h3>Team</h3>
+       <h3>Directors</h3>
        <p>Take a look at our leaders</p>
      </div>
 
      <div class="row">
 
        <div class="col-lg-3 col-md-6 wow fadeInUp">
-         <div class="member">
-           <img src="nymun/secreatrygenral.jpg" class="img-fluid" alt="">
-           <div class="member-info">
-             <div class="member-info-content">
-               <h4>AZAN ASIF</h4>
-               <span>SECRETARY GENERAL</span>
-               <div class="social">
-                 <a href=""><i class="fa fa-twitter"></i></a>
-                 <a href=""><i class="fa fa-facebook"></i></a>
-                 <a href=""><i class="fa fa-google-plus"></i></a>
-                 <a href=""><i class="fa fa-linkedin"></i></a>
-               </div>
-             </div>
-           </div>
+         <div class="container">
+           <a title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content"><img src="nymun/secreatrygenral.jpg" class="img-fluid" alt=""></a>
+
          </div>
        </div>
 
@@ -660,6 +657,12 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
 
 </body>
 </html>
